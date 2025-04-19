@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #0d47a1;
+      --accent-color: #1565c0;
+      --background-color: #e3f2fd;
+      --card-background: #ffffff;
+      --text-color: #263238;
+      --highlight-color: #ffca28;
+      --header-font: 'Poppins', sans-serif;
+    }
+
+    body {
+      font-family: var(--header-font);
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.2rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: var(--accent-color);
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease, transform 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: var(--highlight-color);
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+    }
+
+    .project {
+      background-color: var(--card-background);
+      border-left: 5px solid var(--accent-color);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #contact a {
+      color: var(--primary-color);
+      text-decoration: underline;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hamza Alam Shah</h1>
+    <p>Python & Web Developer | Problem Solver</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer with experience in Python, Django, and modern frontend technologies like React. I enjoy solving complex problems and building efficient web applications.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>7solar</h3>
+      <p>A solar solution platform with roles for sellers, buyers, and admins. Built using Django and DRF.</p>
+    </div>
+    <div class="project">
+      <h3>Legacy System Fix</h3>
+      <p>Revamped an old ASP.NET project and improved backend performance. Led integration and deployment.</p>
+    </div>
+    <div class="project">
+      <h3>OClass</h3>
+      <p>Worked as a backend developer, contributing to features, API development, and database design using Django and DRF.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:xs2hamzashah@gmail.com">xs2hamzashah@gmail.com</a></p>
+    <p>Phone: <a href="tel:+923339506277">+92 333 9506277</a></p>
+    <p>Location: <strong>Village HaibatGram Thana, Malakand Kp, Pakistan</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hamza Alam Shah. All rights reserved.</p>
+  </footer>
+</body>
+</html>
